@@ -377,7 +377,7 @@ def check_flood(user_id):
         user_last_message_time[user_id] = current_time
         return False
 
-@bot.message_handler(commands=['zenginler'])
+@bot.message_handler(commands=['global'])
 def show_leaderboard(message):
     save_user(message.from_user.id)
     user_id = str(message.from_user.id)
