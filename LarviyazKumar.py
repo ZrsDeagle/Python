@@ -529,7 +529,7 @@ def free(message):
             balances = json.load(file)
 
         for key, value in balances.items():
-            if value == 0:
+            if value < 25000:
                 user_balances[key] = 25000
 
         save_balances()
