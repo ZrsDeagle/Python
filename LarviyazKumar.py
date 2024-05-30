@@ -607,6 +607,28 @@ def mute(message):
 
 bot.polling()
 
+
+
+ADMIN_LIST = [{'id': '5257082474', 'name': '👑 『ZRS 乂 DESERTᯤ‌』🇦🇿🇹🇷'}, 
+              {'id': '6781336710', 'name': '𓄂『𝐋𝐀𝐑𝐕𝐈̇𝐘𝐀𝐙』'}, 
+              {'id': '7133236147', 'name': '↯⟬ 𝐑𝐀𝐘𝐙 ⟭↯'}, 
+              {'id': '7003435734', 'name': '𝙺𝙰𝙱𝚄𝚂'},
+              {'id': '5803876827', 'name': 'Last_gamer06'}]              
+              
+
+@bot.message_handler(commands=['adminliste'])
+def admin_list(message):
+    admins_info = "Admin Listesi:\n"
+    
+    for admin in ADMIN_LIST:
+        admin_name = admin['name']
+        admin_id = admin['id']
+        admins_info += f"{admin_name} (ID: {admin_id})\n"
+
+    bot.reply_to(message, admins_info)
+
+
+
 @bot.message_handler(commands=['f'])
 def free(message):
     user_id = str(message.from_user.id)
