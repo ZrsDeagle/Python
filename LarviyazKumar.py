@@ -17,7 +17,7 @@ user_last_message_time = defaultdict(float)
 
 BALANCE_FILE = 'balances.json'
 
-SUDO_USERS = ['682', '5257082474', '6781336710', '7133236147', '7003435734']  
+SUDO_USERS = ['682', '5257082474', '6781336710', '7133236147', '7003435734', '5803876827']  
 
 user_balances = {25000}
 
