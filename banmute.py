@@ -1,5 +1,10 @@
 from telebot.types import ChatPermissions
 import telebot
+# banmute.py
+
+from LarviyazKumar import bot
+
+# devam eden kodlar...
 
 # Banlama yetkisi kontrolü
 def can_ban(chat_id, user_id):
