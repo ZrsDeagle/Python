@@ -615,13 +615,6 @@ def handle_word_guess(message):
         bot.reply_to(message, 'Yanlış tahmin! 👎')  
 
     save_balances()
-    
-target_number = random.randint(1, 100)
-while True:
-  try:
-    bot.polling()
-  except Exception as e:
-    print(e)
 
 # Banlama yetkisi kontrolü
 def can_ban(chat_id, user_id):
@@ -712,3 +705,10 @@ def mute(message):
         bot.reply_to(message, f"Susturma sırasında bir hata oluştu: {e}")
 
 bot.polling()
+    
+target_number = random.randint(1, 100)
+while True:
+  try:
+    bot.polling()
+  except Exception as e:
+    print(e)
