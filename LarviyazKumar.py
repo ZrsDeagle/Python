@@ -6,7 +6,7 @@ import os
 from telebot import TeleBot, types
 from collections import defaultdict
 from threading import Thread
-import banmute
+
 
 API_TOKEN = '7428416363:AAFzUkN2dVmMqZ9slISSGoos9M-ovICRBHM'
 
@@ -425,7 +425,7 @@ def send_help_message(message):
 
 /borc [Kullanıcı İd] [miktar]: 💸 Başka bir kullanıcıya bakiye göndermesi yapın.
 
-/zenginler: 🏆 Genel Sıralamayı gösterir.
+/global: 🏆 Genel Sıralamayı gösterir.
 
 /yardim: ℹ️ Bu yardım mesajını görüntüleyin.
     """
